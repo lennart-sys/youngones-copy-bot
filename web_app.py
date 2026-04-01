@@ -29,112 +29,34 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-    /* YoungOnes kleurenpalet */
-    :root {
-        --yo-orange: #FF5A1F;
-        --yo-black: #111111;
-        --yo-white: #FFFFFF;
-        --yo-grey: #F5F5F5;
-    }
-
-    .stApp { background-color: var(--yo-white); }
-
-    h1, h2, h3 { color: var(--yo-black); font-weight: 700; }
-
-    .yo-header {
-        background: var(--yo-black);
-        color: white;
-        padding: 1.5rem 2rem;
-        border-radius: 12px;
-        margin-bottom: 2rem;
-    }
-
-    .yo-header h1 {
-        color: white;
-        margin: 0;
-        font-size: 1.6rem;
-    }
-
-    .yo-header p {
-        color: #aaa;
-        margin: 0.25rem 0 0 0;
-        font-size: 0.9rem;
-    }
-
-    .copy-output {
-        background: var(--yo-grey);
-        border-left: 4px solid var(--yo-orange);
-        padding: 1.25rem 1.5rem;
-        border-radius: 0 8px 8px 0;
-        margin-bottom: 1rem;
-        white-space: pre-wrap;
-        font-size: 0.95rem;
-        line-height: 1.6;
-    }
-
-    .stButton > button {
-        background-color: var(--yo-orange) !important;
-        color: white !important;
-        border: none !important;
-        border-radius: 8px !important;
-        font-weight: 600 !important;
-        padding: 0.6rem 2rem !important;
-        font-size: 1rem !important;
-        transition: opacity 0.2s;
-    }
-
-    .stButton > button:hover { opacity: 0.85 !important; }
-
-    .stTextArea textarea {
-        border-radius: 8px !important;
-        border: 1.5px solid #ddd !important;
-        font-size: 0.95rem !important;
-    }
-
-    .stSelectbox > div > div {
-        border-radius: 8px !important;
-        border: 1.5px solid #ddd !important;
-    }
-
     .chat-bubble-user {
-        background: #eef2ff;
-        border-radius: 12px 12px 4px 12px;
+        background: #FFF0EB;
+        border-left: 3px solid #FF5A1F;
+        border-radius: 0 8px 8px 0;
         padding: 0.75rem 1rem;
         margin: 0.5rem 0;
         font-size: 0.95rem;
+        color: #111111;
     }
 
     .chat-bubble-bot {
-        background: var(--yo-grey);
-        border-radius: 12px 12px 12px 4px;
+        background: #F5F5F5;
+        border-left: 3px solid #dddddd;
+        border-radius: 0 8px 8px 0;
         padding: 0.75rem 1rem;
         margin: 0.5rem 0;
         font-size: 0.95rem;
         white-space: pre-wrap;
         line-height: 1.6;
-    }
-
-    .status-badge {
-        display: inline-block;
-        background: #e8f5e9;
-        color: #2e7d32;
-        border-radius: 20px;
-        padding: 0.2rem 0.8rem;
-        font-size: 0.8rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
+        color: #111111;
     }
 </style>
 """, unsafe_allow_html=True)
 
 # ── Header ───────────────────────────────────────────────────────────────────
 
-st.markdown("""
-<div class="yo-header">
-    <h1>YoungOnes Copywriter ✍️</h1>
-    <p>Geef een briefing — krijg scherpe copy in de YoungOnes stem.</p>
-</div>
-""", unsafe_allow_html=True)
+st.title("YoungOnes Copywriter ✍️")
+st.caption("Geef een briefing — krijg scherpe copy in de YoungOnes stem.")
 
 # ── Session state ─────────────────────────────────────────────────────────────
 
